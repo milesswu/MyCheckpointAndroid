@@ -3,36 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_day">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="tech.mycheckpoint.ui.day.HomeFragment"
-        android:label="@string/menu_home"
+        android:id="@+id/nav_day"
+        android:name="tech.mycheckpoint.ui.day.DayFragment"
+        android:label="@string/menu_day"
         tools:layout="@layout/fragment_day" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_three"
         android:name="tech.mycheckpoint.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_three"
         tools:layout="@layout/fragment_three" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_week"
         android:name="tech.mycheckpoint.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_week"
         tools:layout="@layout/fragment_week" />
 
     <fragment
-        android:id="@+id/nav_tools"
+        android:id="@+id/nav_month"
         android:name="tech.mycheckpoint.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
+        android:label="@string/menu_month"
         tools:layout="@layout/fragment_month" />
 
     <fragment
-        android:id="@+id/nav_share"
+        android:id="@+id/nav_settings"
         android:name="tech.mycheckpoint.ui.share.ShareFragment"
-        android:label="@string/menu_share"
+        android:label="@string/menu_settings"
         tools:layout="@layout/fragment_settings" />
 
     <fragment
