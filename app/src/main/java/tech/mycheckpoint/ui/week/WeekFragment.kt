@@ -1,4 +1,4 @@
-package tech.mycheckpoint.ui.slideshow
+package tech.mycheckpoint.ui.week
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import tech.mycheckpoint.R
 
-class SlideshowFragment : Fragment() {
+class WeekFragment : Fragment() {
 
-    private lateinit var slideshowViewModel: SlideshowViewModel
+    private lateinit var weekViewModel: WeekViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        slideshowViewModel =
-            ViewModelProviders.of(this).get(SlideshowViewModel::class.java)
+        weekViewModel =
+            ViewModelProviders.of(this).get(WeekViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_week, container, false)
         val textView: TextView = root.findViewById(R.id.text_week)
-        slideshowViewModel.text.observe(this, Observer {
+        weekViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root

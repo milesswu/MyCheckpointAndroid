@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/nav_week"
-        android:name="tech.mycheckpoint.ui.slideshow.SlideshowFragment"
+        android:name="tech.mycheckpoint.ui.week.WeekFragment"
         android:label="@string/menu_week"
         tools:layout="@layout/fragment_week" />
 
