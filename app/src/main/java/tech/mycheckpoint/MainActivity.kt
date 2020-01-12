@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     val RC_SIGN_IN: Int = 0
     lateinit var mGoogleSignInClient: GoogleSignInClient;
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
 
         signInButton.setOnClickListener { view: View -> signIn() }
+
     }
 
     private fun signIn() {

@@ -30,14 +30,20 @@
         tools:layout="@layout/fragment_month" />
 
     <fragment
+        android:id="@+id/nav_calendars"
+        android:name="tech.mycheckpoint.ui.calendars.CalendarsFragment"
+        android:label="Calendars"
+        tools:layout="@layout/fragment_calendars" />
+
+    <fragment
         android:id="@+id/nav_settings"
         android:name="tech.mycheckpoint.ui.settings.SettingsFragment"
         android:label="@string/menu_settings"
         tools:layout="@layout/fragment_settings" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="tech.mycheckpoint.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_logout"
+        android:name="tech.mycheckpoint.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/activity_main" />
 </navigation>

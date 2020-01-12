@@ -1,13 +1,13 @@
-package tech.mycheckpoint.ui.send
+package tech.mycheckpoint.ui.logout
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SendViewModel : ViewModel() {
+class LogoutViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is send Fragment"
+        value = "This is Logout Fragment"
     }
     val text: LiveData<String> = _text
 }

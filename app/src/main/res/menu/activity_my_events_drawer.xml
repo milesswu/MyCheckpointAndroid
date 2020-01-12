@@ -22,6 +22,14 @@
             android:title="@string/menu_month" />
     </group>
 
+    <item android:title="Calendars">
+        <menu>
+            <item
+                android:id="@+id/nav_calendars"
+                android:title="See all Calendars" />
+        </menu>
+    </item>
+
     <item android:title="Communicate">
         <menu>
             <item
@@ -29,9 +37,9 @@
                 android:icon="@drawable/ic_menu_share"
                 android:title="@string/menu_settings" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_logout"
                 android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
+                android:title="@string/menu_logout" />
         </menu>
     </item>
 
