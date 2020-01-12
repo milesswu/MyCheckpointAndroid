@@ -1,4 +1,4 @@
-package tech.mycheckpoint.ui.home
+package tech.mycheckpoint.ui.day
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import tech.mycheckpoint.R
 
-class HomeFragment : Fragment() {
+class DayFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var dayViewModel: DayViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-            ViewModelProviders.of(this).get(HomeViewModel::class.java)
+        dayViewModel =
+            ViewModelProviders.of(this).get(DayViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_day, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        homeViewModel.text.observe(this, Observer {
+        val textView: TextView = root.findViewById(R.id.text_day)
+        dayViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root

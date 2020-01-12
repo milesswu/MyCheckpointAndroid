@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="tech.mycheckpoint.ui.home.HomeFragment"
+        android:name="tech.mycheckpoint.ui.day.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_day" />
 
