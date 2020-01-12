@@ -1,4 +1,4 @@
-package tech.mycheckpoint.ui.gallery
+package tech.mycheckpoint.ui.three
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import tech.mycheckpoint.R
 
-class GalleryFragment : Fragment() {
+class ThreeFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
+    private lateinit var threeViewModel: ThreeViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        galleryViewModel =
-            ViewModelProviders.of(this).get(GalleryViewModel::class.java)
+        threeViewModel =
+            ViewModelProviders.of(this).get(ThreeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_three, container, false)
-        val textView: TextView = root.findViewById(R.id.text_gallery)
-        galleryViewModel.text.observe(this, Observer {
+        val textView: TextView = root.findViewById(R.id.text_three)
+        threeViewModel.text.observe(this, Observer {
             textView.text = it
         })
         return root

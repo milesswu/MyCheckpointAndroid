@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_three"
-        android:name="tech.mycheckpoint.ui.gallery.GalleryFragment"
+        android:name="tech.mycheckpoint.ui.three.ThreeFragment"
         android:label="@string/menu_three"
         tools:layout="@layout/fragment_three" />
 
