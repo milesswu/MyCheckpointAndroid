@@ -25,13 +25,13 @@
 
     <fragment
         android:id="@+id/nav_month"
-        android:name="tech.mycheckpoint.ui.tools.ToolsFragment"
+        android:name="tech.mycheckpoint.ui.month.MonthFragment"
         android:label="@string/menu_month"
         tools:layout="@layout/fragment_month" />
 
     <fragment
         android:id="@+id/nav_settings"
-        android:name="tech.mycheckpoint.ui.share.ShareFragment"
+        android:name="tech.mycheckpoint.ui.settings.SettingsFragment"
         android:label="@string/menu_settings"
         tools:layout="@layout/fragment_settings" />
 
